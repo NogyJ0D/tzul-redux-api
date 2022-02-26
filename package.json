@@ -4,8 +4,25 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=dev npx nodemon server.js",
+    "start": "node server.js"
   },
   "author": "NogyJ0D",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "5.0.1",
+    "cookie-parser": "1.4.6",
+    "cors": "2.8.5",
+    "dotenv": "16.0.0",
+    "express": "4.17.3",
+    "jsonwebtoken": "8.5.1",
+    "mongoose": "6.2.3",
+    "passport": "0.5.2",
+    "passport-google-oauth20": "2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15",
+    "standard": "16.0.4"
+  }
 }
